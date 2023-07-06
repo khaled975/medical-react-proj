@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/medical-react-proj/static/css/main.b3481591.css",
+    "main.js": "/medical-react-proj/static/js/main.cc6110ec.js",
+    "static/js/787.ac34fb11.chunk.js": "/medical-react-proj/static/js/787.ac34fb11.chunk.js",
+    "static/media/heroimg.png": "/medical-react-proj/static/media/heroimg.7c2bc96d67d3eba1d64a.png",
+    "static/media/banner.jpg": "/medical-react-proj/static/media/banner.815eb17ad747be75950d.jpg",
+    "static/media/cover.jpg": "/medical-react-proj/static/media/cover.d025f458ac691ab6e8fa.jpg",
+    "static/media/mobile.png": "/medical-react-proj/static/media/mobile.f82d73222992d2101a09.png",
+    "static/media/img1.jpg": "/medical-react-proj/static/media/img1.0593bc2fd8a13cf8c19f.jpg",
+    "static/media/img2.jpg": "/medical-react-proj/static/media/img2.ad1ed7ee8284087fe9ee.jpg",
+    "static/media/img3.jpg": "/medical-react-proj/static/media/img3.fa689b1037dbf69567a3.jpg",
+    "static/media/background.jpg": "/medical-react-proj/static/media/background.c53c8971d16c9a1033ae.jpg",
+    "static/media/person.png": "/medical-react-proj/static/media/person.eb5c49c523f7d6240d33.png",
+    "index.html": "/medical-react-proj/index.html",
+    "main.b3481591.css.map": "/medical-react-proj/static/css/main.b3481591.css.map",
+    "main.cc6110ec.js.map": "/medical-react-proj/static/js/main.cc6110ec.js.map",
+    "787.ac34fb11.chunk.js.map": "/medical-react-proj/static/js/787.ac34fb11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3481591.css",
+    "static/js/main.cc6110ec.js"
+  ]
+}
