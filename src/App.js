@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header';
+import Landing from './components/Landing/Landing';
+import About from './components/About/About';
+import Services from './components/Services/Services';
+import FooterSec from './components/Footer/FooterSec';
+import Booking from './components/Booking/Booking';
+import Contact from './components/Contact/Contact';
+import { useEffect, useLayoutEffect, useState } from 'react';
+import {RingLoader} from 'react-spinners'
 
 function App() {
+  const [loading , setLoading] = useState(true)
+  useLayoutEffect(()=>{
+    // setLoading(false)
+    setTimeout(()=>{
+      setLoading(false)
+    },2800)
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {
+      loading ? 
+      <div className='loader'>
+        <RingLoader color="#565ACF" size={90} loading={loading} />
+      </div>
+      :
+      <>
+        <Header/>
+        <Landing/>
+        <About/>
+        <Services/>
+        <Booking/>
+        <Contact/>
+        <FooterSec/>
+      </>
+    }
     </div>
   );
 }

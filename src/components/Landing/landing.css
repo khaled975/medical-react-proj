@@ -1,0 +1,110 @@
+.landing-sec{
+    background-image: url('../../Assets/landing/background.jpg');
+    background-size: cover;
+    /* height: calc(100vh - 85px); */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 100px 0 0px 0;
+    /* z-index: 2; */
+}
+.landing-sec .container .row{
+    position: relative;
+    z-index: 10;
+}
+.landing-sec::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url(http://localhost:3000/static/media/landing-footer.1112f1ac0dc18e511a91.png);
+    background-position: 0 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.landing-sec .text h4{
+    background-image: url('../../Assets/landing/textcover.png');
+    color: #5256C6;
+    padding: 4px 14px;
+    width: fit-content;
+}
+.landing-sec .text h2{
+    font-size: 60px;
+}
+.landing-sec .text button{
+    background-color: var(--sec-color);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+.landing-sec .text button:hover{
+    background-color: #f58e52;
+}
+.landing-sec .img img{
+    max-width: 100%;
+    animation: up-down 1.4s infinite  alternate;
+}
+.landing-sec img.symp{
+    position: absolute;
+    z-index: 1;
+    user-select: none;
+}
+
+.landing-sec img.symp:nth-of-type(1){
+    bottom: 16%;
+    left: 45%;
+}
+.landing-sec img.symp:nth-of-type(2){
+    top: 50%;
+    left: 2%;
+    animation: up-down 1.4s infinite  alternate;
+}
+.landing-sec img.symp:nth-of-type(3){
+    top:20%;
+    left: 62%;
+    animation: up-down 1.3s infinite  alternate;
+}
+.landing-sec img.symp:nth-of-type(4){
+    top: 22%;
+    left: 14%;
+}
+.landing-sec img.symp:nth-of-type(5){
+    bottom: 16%;
+    right: 7%;
+    animation: right-left 1.3s infinite  alternate;
+}
+
+@keyframes up-down {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+@keyframes right-left {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-10px);
+    }
+}
+
+
+
+/* media query */
+@media (max-width:770px) {
+    .landing-sec .text h2 {
+        font-size: 35px;
+    }
+    .landing-sec .text h4 {
+        font-size: 20px;
+    }
+}
+/* .landing-sec .container {
+    align-items: center;
+} */

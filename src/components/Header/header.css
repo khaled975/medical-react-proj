@@ -1,0 +1,114 @@
+.navbar.show{
+  background-color: #fff;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,.1)
+}
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .navbar .container{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar-nav {
+    margin: auto;
+    gap: 15px;
+    align-items: center;
+  }
+  .navbar .navbar-nav a {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: var(--main-color) !important;
+    transition: var(--main-trans);
+  }
+  .navbar .navbar-nav a.phone{
+    display: flex;
+    align-items: center;
+  }
+  .navbar .navbar-nav a svg.phone-icon{
+    background-color: rgba(86,90,207,.1);
+    padding: 9px 6px;
+    opacity: 0.7;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  .navbar .navbar-nav a.active {
+    color: var(--sec-color) !important;
+  }
+  .navbar .navbar-nav a:hover {
+    color: var(--sec-color) !important;
+  }
+  .navbar .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .06);
+    width: 200px;
+    padding: 15px 0 15px 15px;
+  }
+  .navbar .dropdown-menu a{
+    font-weight: 400;
+    color: #666 !important;
+    position: relative;
+    width: fit-content;
+    padding: 0;
+    margin-bottom: 6px;
+  }
+  .navbar .dropdown-menu a::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 0.5px;
+    width: 0;
+    background-color: var(--main-color);
+    transition: var(--main-trans);
+  }
+  .navbar .dropdown-menu a:hover{
+    color: var(--main-color) !important;
+    background-color: transparent;
+  }
+  .navbar .dropdown-menu a:hover::before{
+    width: 100%;
+  }
+  .navbar .nav-link button{
+    background-color: var(--btn-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--main-trans);
+  }
+  .navbar .nav-link button:hover{
+    background-color: #3f43a5;
+  }
+  .navbar .nav-link button svg{
+    width: 32px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--main-color);
+    padding: 2px 1px;
+    margin-left: 8px;
+  }
+
+  
+/* media query */
+  @media (max-width:992px) {
+    .navbar .navbar-nav {
+        align-items: flex-start;
+    }
+    .navbar .navbar-nav a, 
+    .navbar .dropdown,
+    .navbar .dropdown-menu,
+    .navbar .nav-link button{
+        width: 100%;
+    }
+    .navbar .dropdown-menu a{
+        width: fit-content;
+      }
+  }
